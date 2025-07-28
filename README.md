@@ -34,4 +34,4 @@ flutter run
 - Material Design
 
 ## Author
-Made by Nuwan to explore Flutter widgets.
+itsnuwandev.
