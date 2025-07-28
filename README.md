@@ -1,12 +1,6 @@
 # Widget Explain App
 A simple Flutter app to help understand basic Flutter widgets through interactive examples and a clean UI.
 
-## Features
-- Home screen with animated icons and gradient background
-- Grid view showing 8 core Flutter widgets
-- Detailed pages explaining each widget's use and properties
-- Smooth navigation and modern, colorful design
-
 ## Widgets Included
 - Container
 - Text
