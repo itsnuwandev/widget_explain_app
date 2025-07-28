@@ -1,4 +1,4 @@
-# � Widget Explain App
+# Widget Explain App
 A simple Flutter app to help understand basic Flutter widgets through interactive examples and a clean UI.
 
 ## Features
