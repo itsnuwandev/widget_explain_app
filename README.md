@@ -1,13 +1,13 @@
 # � Widget Explain App
 A simple Flutter app to help understand basic Flutter widgets through interactive examples and a clean UI.
 
-## 📌 Features
+## Features
 - Home screen with animated icons and gradient background
 - Grid view showing 8 core Flutter widgets
 - Detailed pages explaining each widget's use and properties
 - Smooth navigation and modern, colorful design
 
-## � Widgets Included
+## Widgets Included
 - Container
 - Text
 - Button
@@ -17,7 +17,7 @@ A simple Flutter app to help understand basic Flutter widgets through interactiv
 - Row
 - Stack
 
-## 🚀 How to Run
+## How to Run
 Clone this project
 ```bash
 git clone https://github.com/itsnuwandev/widget_explain_app.git
@@ -34,10 +34,10 @@ Run the app
 flutter run
 ```
 
-## � Tools Used
+## Tools Used
 - Flutter 3.x
 - Dart
 - Material Design
 
-## � Author
+## Author
 Made by Nuwan to explore Flutter widgets.
