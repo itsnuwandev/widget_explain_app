@@ -336,6 +336,22 @@ class WidgetDetailPage extends StatelessWidget {
         return const Color(0xFFFF8CC8);
       case 'stack':
         return const Color(0xFFFFC947);
+      case 'chip':
+        return const Color(0xFF7C3AED);
+      case 'inkwell':
+        return const Color(0xFFEC4899);
+      case 'gesturedetector':
+        return const Color(0xFF059669);
+      case 'circleavatar':
+        return const Color(0xFFEAB308);
+      case 'statefulwidget':
+        return const Color(0xFFDC2626);
+      case 'switch':
+        return const Color(0xFF0891B2);
+      case 'slider':
+        return const Color(0xFF7C2D12);
+      case 'textfield':
+        return const Color(0xFF1E40AF);
       default:
         return const Color(0xFF6C63FF);
     }
@@ -359,6 +375,22 @@ class WidgetDetailPage extends StatelessWidget {
         return Icons.view_week_rounded;
       case 'stack':
         return Icons.layers_rounded;
+      case 'chip':
+        return Icons.label_rounded;
+      case 'inkwell':
+        return Icons.touch_app_outlined;
+      case 'gesturedetector':
+        return Icons.pan_tool_rounded;
+      case 'circleavatar':
+        return Icons.account_circle_rounded;
+      case 'statefulwidget':
+        return Icons.refresh_rounded;
+      case 'switch':
+        return Icons.toggle_on_rounded;
+      case 'slider':
+        return Icons.tune_rounded;
+      case 'textfield':
+        return Icons.edit_rounded;
       default:
         return Icons.widgets;
     }
@@ -382,6 +414,22 @@ class WidgetDetailPage extends StatelessWidget {
         return 'A widget that displays its children in a horizontal array. It\'s used to arrange widgets horizontally on the screen with various alignment options.';
       case 'stack':
         return 'A widget that positions its children relative to the edges of its box. It allows widgets to overlap each other, useful for creating layered layouts.';
+      case 'chip':
+        return 'A material design chip widget. It displays a small piece of information as a compact element, often used for tags, choices, or actions in a condensed form.';
+      case 'inkwell':
+        return 'A rectangular area of material that responds to touch events. It provides visual feedback when tapped, creating ripple effects and handling gesture interactions.';
+      case 'gesturedetector':
+        return 'A widget that detects gestures like taps, drags, and other touch interactions. It\'s invisible but provides a powerful way to handle user input without visual feedback.';
+      case 'circleavatar':
+        return 'A circle that represents a user with an image, icon, or initials. Commonly used in user profiles, contact lists, and anywhere user representation is needed.';
+      case 'statefulwidget':
+        return 'A widget that has mutable state. Unlike StatelessWidget, it can rebuild itself when its internal state changes, making it perfect for interactive and dynamic content.';
+      case 'switch':
+        return 'A material design switch widget. It\'s used to toggle between on/off or true/false states, providing a clear visual indication of the current state.';
+      case 'slider':
+        return 'A material design slider widget. It allows users to select a value from a range by sliding a thumb along a track, perfect for adjusting settings or values.';
+      case 'textfield':
+        return 'A material design text field widget. It allows users to input and edit text, providing various input types, validation, and formatting options.';
       default:
         return 'A Flutter widget with various properties and use cases in mobile app development.';
     }
@@ -449,6 +497,78 @@ class WidgetDetailPage extends StatelessWidget {
           'alignment: Default alignment for children',
           'fit: How to size the non-positioned children',
           'clipBehavior: Whether to clip overflowing children',
+        ];
+      case 'chip':
+        return [
+          'label: Text or widget displayed on the chip',
+          'avatar: Leading widget like CircleAvatar',
+          'onDeleted: Callback when delete icon is pressed',
+          'backgroundColor: Background color of the chip',
+          'deleteIcon: Icon shown for deletion',
+          'elevation: Shadow depth of the chip',
+        ];
+      case 'inkwell':
+        return [
+          'onTap: Callback when tapped',
+          'onDoubleTap: Callback when double-tapped',
+          'onLongPress: Callback when long-pressed',
+          'borderRadius: Defines the ripple effect shape',
+          'splashColor: Color of the splash effect',
+          'highlightColor: Color when pressed and held',
+        ];
+      case 'gesturedetector':
+        return [
+          'onTap: Detects single tap gestures',
+          'onDoubleTap: Detects double tap gestures',
+          'onLongPress: Detects long press gestures',
+          'onPanUpdate: Detects drag/pan movements',
+          'onScaleUpdate: Detects pinch-to-zoom gestures',
+          'child: The widget to detect gestures on',
+        ];
+      case 'circleavatar':
+        return [
+          'radius: Size of the circular avatar',
+          'backgroundImage: Image to display in the circle',
+          'backgroundColor: Background color when no image',
+          'child: Widget to display (usually Text or Icon)',
+          'foregroundColor: Color of the foreground content',
+          'maxRadius: Maximum radius constraint',
+        ];
+      case 'statefulwidget':
+        return [
+          'createState(): Creates the mutable state object',
+          'setState(): Triggers widget rebuild when called',
+          'initState(): Called when widget is first created',
+          'dispose(): Called when widget is removed',
+          'build(): Returns the widget tree to display',
+          'State lifecycle: Manages widget state changes',
+        ];
+      case 'switch':
+        return [
+          'value: Current on/off state of the switch',
+          'onChanged: Callback when switch state changes',
+          'activeColor: Color when switch is on',
+          'inactiveThumbColor: Color of thumb when off',
+          'inactiveTrackColor: Color of track when off',
+          'materialTapTargetSize: Size of the tap target',
+        ];
+      case 'slider':
+        return [
+          'value: Current value of the slider',
+          'onChanged: Callback when value changes',
+          'min: Minimum value of the slider',
+          'max: Maximum value of the slider',
+          'divisions: Number of discrete divisions',
+          'label: Text label shown above the thumb',
+        ];
+      case 'textfield':
+        return [
+          'controller: Controls the text being edited',
+          'decoration: Input decoration and styling',
+          'keyboardType: Type of keyboard to display',
+          'obscureText: Hides text for passwords',
+          'maxLines: Maximum number of lines',
+          'onChanged: Callback when text changes',
         ];
       default:
         return [
